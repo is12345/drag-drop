@@ -1,0 +1,30 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle drag-drop",
+        "command": "drag-drop:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "drag-drop",
+          "submenu": [
+            {
+              "label": "Open",
+              "command": "drag-drop:open"
+            },
+            {
+              "label": "Save",
+              "command": "drag-drop:save"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
