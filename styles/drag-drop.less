@@ -5,15 +5,32 @@
 @import "ui-variables";
 
 .drag-drop {
-  width: 50px;
-  height: 50px;
-  .rect{
     width: 50px;
     height: 50px;
-    top:100px;
-    left: 100px;
+    top:0px;
+    left: 0px;
     margin-right: 15px;
     border-radius: 3px;
     background: rgba(238, 228, 218, 0.35);
-  }
+
+    .upBtn,.downBtn,.upleftBtn,.uprightBtn,.downleftBtn,.downrightBtn,.leftBtn,.rightBtn
+    {background: rgba(238, 228, 218, 0.35); opacity:0; width:8px; height:8px; z-index:5; position:absolute;}
+    .upBtn { top:0px;left:50%; margin-left:-4px; cursor:n-resize; }
+    .downBtn { bottom:0px; left:50%; margin-left:-4px; cursor:s-resize; }
+    .upleftBtn { top:0px; left:0px; cursor:nw-resize; }
+    .uprightBtn { top:0px; right:0px; cursor:ne-resize; }
+    .downleftBtn { bottom:0px; left:0px; cursor:sw-resize; }
+    .downrightBtn { bottom:0px; right:0px; cursor:se-resize;}
+    .leftBtn { top:50%; left:0px;margin-top:-4px; cursor:w-resize; }
+    .rightBtn { top:50%; right:0px; margin-top:-4px; cursor:e-resize; }
+
+
+    // .upBtn { top:0px; left:50%; cursor:n-resize; background:#CC0000; width:8px; height:8px; z-index:5; position:absolute;}
+    // .downBtn { bottom:0px; left:50%; cursor:s-resize; background:#CC0000; width:8px; height:8px; z-index:5;position:absolute;}
+    // .upleftBtn { top:0px; left:0px; cursor:nw-resize; background:#CC0000; width:8px; height:8px; z-index:5;position:absolute;}
+    // .uprightBtn { top:0px; right:0px; cursor:ne-resize; background:#CC0000; width:8px; height:8px; z-index:5;position:absolute;}
+    // .downleftBtn { bottom:0px; left:0px; cursor:sw-resize; background:#CC0000; width:8px; height:8px; z-index:5;position:absolute;}
+    // .downrightBtn { bottom:0px; right:0px; cursor:se-resize; background:#CC0000; width:8px; height:8px; z-index:5;position:absolute;}
+    // .leftBtn { top:50%; left:0px; cursor:w-resize; background:#CC0000; width:8px; height:8px; z-index:5;position:absolute;}
+    // .rightBtn { top:50%; right:0px; cursor:e-resize; background:#CC0000; width:8px; height:8px; z-index:5;position:absolute;}
 }
